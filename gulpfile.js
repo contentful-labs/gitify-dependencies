@@ -27,9 +27,10 @@ gulp.task('lint-code', function () {
     .src([
       './gulpfile.js',
       './index.js',
-      './bin/**/*',
+      './bin/**/*.js',
       './lib/**/*.js',
-      './test/**/*.js'
+      './test/**/*.js',
+      '!./test/fixtures/**/*'
     ])
     .pipe(jscs())
     .pipe(jshint())
