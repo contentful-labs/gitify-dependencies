@@ -1,0 +1,39 @@
+{
+  "name": "gitify-dependencies",
+  "version": "0.0.0",
+  "description": "CLI tool for replacing node dependencies with their respective git repositories",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp",
+    "test-integration": "gulp test-integration",
+    "test-unit": "gulp test-unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contentful/gitify-dependencies.git"
+  },
+  "keywords": [
+    "git",
+    "repository",
+    "dependency",
+    "node"
+  ],
+  "author": "Contentful GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/contentful/gitify-dependencies/issues"
+  },
+  "homepage": "https://github.com/contentful/gitify-dependencies",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "dirty-chai": "^1.2.2",
+    "gulp": "^3.9.0",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-markdown-code-blocks": "^1.1.0",
+    "gulp-spawn-mocha": "^2.2.2",
+    "gulp-util": "^3.0.7",
+    "run-sequence": "^1.1.5",
+    "gulp-busterjs": "^1.5.0"
+  }
+}
