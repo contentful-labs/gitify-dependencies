@@ -11,7 +11,7 @@ describe('gitify-deps', function () {
     it('complains about missing url pattern vars', function () {
       expect(function () {
         execSync(cliPath);
-      }).to.throw(/No GITIFY_URL_PATTERN option defined\./);
+      }).to.throw(/No GITIFY_URL_PATTERN variable or --gitify-url-pattern option provided\./);
     });
   });
 });
