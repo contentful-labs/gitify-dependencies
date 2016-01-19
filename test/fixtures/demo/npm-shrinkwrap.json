@@ -1,0 +1,47 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "npm-shrinkwrap-version": "5.4.0",
+  "node-version": "v4.2.4",
+  "dependencies": {
+    "keepachangelog": {
+      "version": "0.7.0-1-gbb74726",
+      "resolved": "git+ssh://git@github.com/contentful-labs/keepachangelog.git#v0.7.0-1-gbb74726",
+      "dependencies": {
+        "bluebird": {
+          "version": "2.10.2"
+        },
+        "lodash-node": {
+          "version": "3.10.1"
+        },
+        "markdown": {
+          "version": "0.5.0",
+          "dependencies": {
+            "nopt": {
+              "version": "2.1.2",
+              "dependencies": {
+                "abbrev": {
+                  "version": "1.0.7"
+                }
+              }
+            }
+          }
+        },
+        "parsimmon": {
+          "version": "0.7.0",
+          "dependencies": {
+            "pjs": {
+              "version": "5.1.1"
+            }
+          }
+        },
+        "semver": {
+          "version": "4.3.6"
+        }
+      }
+    },
+    "lodash": {
+      "version": "4.0.0"
+    }
+  }
+}

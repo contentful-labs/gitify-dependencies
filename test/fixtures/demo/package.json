@@ -1,0 +1,15 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Test package used for integration tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Contentful GmbH",
+  "license": "MIT",
+  "dependencies": {
+    "keepachangelog": "^0.7.0",
+    "lodash": "^4.0.0"
+  }
+}
