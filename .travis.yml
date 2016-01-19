@@ -4,3 +4,7 @@ node_js:
   - 4
 
 sudo: false
+
+script:
+  - tools/audit.sh
+  - npm test
