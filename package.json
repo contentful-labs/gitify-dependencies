@@ -2,7 +2,7 @@
   "name": "gitify-dependencies",
   "version": "0.0.0",
   "description": "CLI tool for replacing node dependencies with their respective git repositories",
-  "main": "index.js",
+  "main": "lib/gitify.js",
   "scripts": {
     "test": "gulp",
     "test-integration": "gulp test-integration",
