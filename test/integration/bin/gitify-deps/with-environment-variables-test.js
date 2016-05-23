@@ -70,6 +70,6 @@ function isGitRepository (path) {
 
 function isNoGitRepository (path) {
   expect(function () {
-    fs.statSync(`${path}/lodash/.git`);
+    fs.statSync(`${path}/.git`);
   }).to.throw(/no such file or directory/);
 }
