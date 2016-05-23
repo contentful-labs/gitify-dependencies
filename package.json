@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/contentful/gitify-dependencies.git"
+    "url": "git+https://github.com/contentful-labs/gitify-dependencies.git"
   },
   "keywords": [
     "git",
@@ -21,9 +21,9 @@
   "author": "Contentful GmbH",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/contentful/gitify-dependencies/issues"
+    "url": "https://github.com/contentful-labs/gitify-dependencies/issues"
   },
-  "homepage": "https://github.com/contentful/gitify-dependencies",
+  "homepage": "https://github.com/contentful-labs/gitify-dependencies",
   "devDependencies": {
     "chai": "^3.4.1",
     "dirty-chai": "^1.2.2",
