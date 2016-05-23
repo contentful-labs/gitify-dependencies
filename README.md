@@ -1,4 +1,4 @@
-# gitify-dependencies [![Build Status](https://travis-ci.com/contentful/gitify-dependencies.svg?token=CYEWg3reo6fMQ47zH5gY&branch=master)](https://travis-ci.com/contentful/gitify-dependencies)
+# gitify-dependencies [![Build Status](https://travis-ci.com/contentful-labs/gitify-dependencies.svg?token=CYEWg3reo6fMQ47zH5gY&branch=master)](https://travis-ci.com/contentful-labs/gitify-dependencies)
 CLI tool for replacing node dependencies with their respective git repositories.
 
 ## Installation
