@@ -15,32 +15,17 @@ gitify-deps [--options]
 
 ### Options
 
-#### --checkout-tags, -c
-
-If a dependency is already a git repo, the CLI will just "git checkout" the version specified in npm-shrinkwrap.json.
-This option can also be set via the environment variable `CHECKOUT_TAGS`.
-
-Allowed values: ['yes', 'no']  
-Default value: 'no'
-
-#### --gitify-url-pattern, -p
-
-Specify a pattern that gets matched against the package's url. 
-This option can also be set via the environment variable `GITIFY_URL_PATTERN`.
-
-*Please note, that you must either set this flag or the environment variable!*
-
-#### NODE_PROJECTS_DIR
-
-Use this environment variable to set a path which will keep the git repository's data. 
-
-Default value: `$HOME/.gitify`
+| Flag | Environment variable | Description | Allowed values | Default value |
+|------|----------------------|-------------|----------------|---------------|
+| --checkout-tags<br>-c | CHECKOUT_TAGS | If a dependency is already a git repo, the CLI will just "git checkout" the version specified in `npm-shrinkwrap.json`. | 'yes', 'no' | 'no' |
+| --gitify-url-pattern<br>-p | GITIFY_URL_PATTERN | Specify a pattern that gets matched against the package's url.<br> **Please note, that you must either set this flag or the environment variable!** | none | none |
+| --node-projects-dir<br> -d | NODE_PROJECTS_DIR | Set a path which will keep the git repository's data. | none | $HOME/.gitify |
 
 ## Idea
 
 This tool walks through your `npm-shrinkwrap.json` file and does the following things for every dependency (and it's sub-dependencies):
 
-1. Clone or update the package's repo in `{NODE_PROJECTS_DIR}/{name of the dependency}`. 
+1. Clone or update the package's repo in `{NODE_PROJECTS_DIR}/{name of the dependency}`.
 2. Back up the package's private `node_modules` directory if present.
 3. Remove any existing package.
 4. Create a new git "workdir" in it's place that shares the same repository as `{NODE_PROJECTS_DIR}/{name of the dependency}`.
