@@ -18,6 +18,10 @@ let yargs = require('yargs')
   .option('gitify-url-pattern', {
     alias: 'p',
     describe: 'Specify a pattern that gets matched against the package\'s url.'
+  })
+  .option('node-projects-dir', {
+    alias: 'd',
+    describe: 'Set a path which will keep the git repository\'s data.'
   });
 
 let argv = yargs.argv;
