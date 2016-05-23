@@ -4,7 +4,7 @@ CLI tool for replacing node dependencies with their respective git repositories.
 ## Installation
 
 ```
-npm install -g contentful/gitify-dependencies.git
+npm install -g gitify-dependencies
 ```
 
 ## Usage
