@@ -10,8 +10,6 @@ let os = require('os');
 const demoPath = path.resolve(__dirname, '..', '..', '..', 'fixtures', 'demo');
 const modulesPath = path.resolve(demoPath, 'node_modules');
 const cliPath = path.resolve(__dirname, '..', '..', '..', '..', 'bin', 'gitify-deps.js');
-const changelogPath = `${modulesPath}/keepachangelog`;
-const lodashPath = `${modulesPath}/lodash`;
 
 describe('gitify-deps', function () {
   describe('with NODE_PROJECTS_DIR', function () {
@@ -93,10 +91,4 @@ function isGitRepository (path) {
   expect(function () {
     fs.statSync(`${path}/.git`);
   }).to.not.throw();
-}
-
-function isNoGitRepository (path) {
-  expect(function () {
-    fs.statSync(`${path}/lodash/.git`);
-  }).to.throw(/no such file or directory/);
 }
