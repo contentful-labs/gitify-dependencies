@@ -6,7 +6,9 @@
   "dependencies": {
     "keepachangelog": {
       "version": "0.7.0-1-gbb74726",
-      "resolved": "git+ssh://git@github.com/contentful-labs/keepachangelog.git#v0.7.0-1-gbb74726",
+      "resolved": "https://github.com/contentful-labs/keepachangelog.git#v0.7.0-1-gbb74726",
+
+
       "dependencies": {
         "bluebird": {
           "version": "2.10.2"

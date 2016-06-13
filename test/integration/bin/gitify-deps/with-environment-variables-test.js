@@ -30,7 +30,7 @@ describe('gitify-deps', function () {
       output = execSync(cliPath, options).toString();
     });
 
-    it('only gitifies a single dependency', function () {
+    it.only('only gitifies a single dependency', function () {
       expect(output.match(/Replacing.*with git repository/g)).to.have.length(1);
     });
 

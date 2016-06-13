@@ -6,5 +6,7 @@ node_js:
 sudo: false
 
 script:
-  - tools/audit.sh
+  - rm -rf /tmp/.gitify
+  - rm -rf /home/travis/.gitify
+  # - tools/audit.sh
   - npm test
