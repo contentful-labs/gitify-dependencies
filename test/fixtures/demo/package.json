@@ -9,7 +9,7 @@
   "author": "Contentful GmbH",
   "license": "MIT",
   "dependencies": {
-    "keepachangelog": "^0.7.0",
+    "keepachangelog": "^0.7.2",
     "lodash": "^4.0.0"
   }
 }
