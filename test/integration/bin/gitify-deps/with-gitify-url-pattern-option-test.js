@@ -41,7 +41,7 @@ describe('gitify-deps', function () {
     it('checks out the right git hash', function () {
       let hash = fs.readFileSync(`${changelogPath}/.git/HEAD`).toString().trim();
 
-      expect(hash).to.equal('bb747260fcdad8e52f8a98e4dfa273869027a071');
+      expect(hash).to.equal('eebd023c392a0b7fc5a6e0952e57be4d5485dd4e');
     });
 
     it('does not touch the lodash dependency', function () {
